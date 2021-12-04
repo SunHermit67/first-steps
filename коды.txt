@@ -1,0 +1,42 @@
+chislo = float(input())
+n = 2
+while True:
+    chislo = chislo - 1/n
+    if chislo <= 0:
+        print(n-1, " card")
+        break
+    else:
+        n = n + 1
+
+
+
+v = int(input("speed "))
+t = int(input("time "))
+km = v * t
+while True:
+    if km > 0:
+        break
+    if v < 0:
+        if km < -109:
+            km1 = km % 109
+            print(km1)
+            break
+        else:
+            km = km + 109
+            break
+while True:
+    if km < 0:
+        break
+    if km >= 109:
+        km = km - 109
+    else:
+        print(km)
+        break
+
+
+
+
+number = int(input())
+print(number % 10)
+
+
